@@ -143,12 +143,6 @@ int main()
 			cout << "Simulation Ended, proceed to exit." << endl;
 			system("pause");
 		}
-		//Gotta enter your choice.
-		else
-		{
-			cout << "Gotta type Y or N" << endl;
-			cin >> playerChoice;
-		}
 	} while (playAgain == true);
 	return 0;
 }
