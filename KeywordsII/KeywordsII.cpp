@@ -28,9 +28,9 @@ int main()
 	cout << "\n\nHello " << recruitName << endl;
 	cout << "\nWelcome to CodeBreaker II. Good Luck Playing!\n";
 	system("pause");
-	const int MAX_WRONG = 8;
-	int wordWrongs = 0;
-	int wordsCorrrects = 0;
+	const int MAX_WRONG = 8; //Max Wrongs for letters
+	int wordWrongs = 0; //Number of wrongs
+	int wordsCorrrects = 0; //Number of corrections
 	vector <string> words;
 	//Words
 	words.push_back("SPY");
@@ -124,7 +124,7 @@ int main()
 		}
 		cout << "\n\nYou got " << wordWrongs << " Wrongs"; //Number of Wrongs
 		cout << "\nYou got " << wordsCorrrects << " Corrects"; //Number of Corrected Words.
-		cout << "\nWould you like to r un the simulation again? (Y/N): ";
+		cout << "\n\nWould you like to r un the simulation again? (Y/N): ";
 		//String player choice
 		string playerChoice;
 		//Enter your choice of yes or no.
@@ -140,7 +140,7 @@ int main()
 		else if (playerChoice == "n" || playerChoice == "N")
 		{
 			//Allow simulation to finish
-			cout << "Simulation Ended, proceed to exit." << endl;
+			cout << "\nSimulation Ended, proceed to exit." << endl;
 			system("pause");
 		}
 	} while (playAgain == true);
