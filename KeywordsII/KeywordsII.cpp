@@ -144,5 +144,6 @@ int main()
 			system("pause");
 		}
 	} while (playAgain == true);
+	system("pause");
 	return 0;
 }
